@@ -1,5 +1,5 @@
 {
-  "name": "reacttimer",
+  "name": "learningredux",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moufid4/ReactTimer.git"
+    "url": "git+https://github.com/moufid4/LearningRedux.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moufid4/ReactTimer/issues"
+    "url": "https://github.com/moufid4/LearningRedux/issues"
   },
-  "homepage": "https://github.com/moufid4/ReactTimer#readme",
+  "homepage": "https://github.com/moufid4/LearningRedux#readme",
   "dependencies": {
     "axios": "^0.15.3",
     "express": "^4.14.0",
