@@ -19,7 +19,19 @@ var reducer = (state = stateDefault, action) => {
 	}
 };
 
-var store = redux.createStore(reducer);
+var store = redux.createStore(reducer, redux.compose(
+	window.devToolsExtension ? window.devToolsExtension() : f => f
+	)
+);
+
+// Subscribe to changes
+var unsubscribe = store.subscribe(() => {
+	var state = store.getState();
+
+	console.log('searchText is: ', state.searchText);
+})
+
+// unsubscribe();
 
 var currentState = store.getState();
 
@@ -29,5 +41,3 @@ store.dispatch({
 	type: 'CHANGE_SEARCH_TEXT',
 	searchText: 'success'
 });
-
-console.log('Search text should be success ', store.getState());
