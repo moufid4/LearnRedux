@@ -41,3 +41,13 @@ store.dispatch({
 	type: 'CHANGE_SEARCH_TEXT',
 	searchText: 'success'
 });
+
+store.dispatch({
+	type: 'CHANGE_SEARCH_TEXT',
+	searchText: 'Go to the gym'
+});
+
+store.dispatch({
+	type: 'CHANGE_SEARCH_TEXT',
+	searchText: 'Code'
+});
