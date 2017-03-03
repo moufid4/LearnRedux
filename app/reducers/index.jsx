@@ -54,6 +54,8 @@ export var mapReducer = (state = {isFetching: false, url: undefined}, action) =>
 				url: undefined
 			};
 		case 'COMPLETE_LOCATION_FETCH':
+		console.log('complete location fetch called')
+			console.log('complete', action.url)
 			return {
 				isFetching: false,
 				url: action.url

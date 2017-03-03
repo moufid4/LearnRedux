@@ -1,3 +1,6 @@
+var axios = require('axios');
+var store = require('./../store/configureStore').configure();
+
 export var changeName = (name) => {
 	return {
 		type: 'CHANGE_NAME',
@@ -53,9 +56,8 @@ export var fetchLocation = () => {
 
 		axios.get('http://ipinfo.io').then(function (res) {
 			var loc = res.data.loc;
-			var baseUrl = 'http://maps.google.com?q='
-
-			store.dispatch(completeLocationFetch(baseUrl + loc));
+			var baseUrl = 'http://maps.google.com?q=';
+			dispatch(completeLocationFetch(baseUrl + loc));
 		});
 	};
 };

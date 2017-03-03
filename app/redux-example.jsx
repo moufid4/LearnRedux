@@ -14,7 +14,7 @@ var unsubscribe = store.subscribe(() => {
 	// document.getElementById('app').innerHTML = state.name;
 	console.log('New State', store.getState())
 
-	if (state.map.isFetching) {
+	if (state.isFetching) {
 		document.getElementById('app').innerHTML = 'Loading...'
 	} else if (state.map.url) {
 		document.getElementById('app').innerHTML = '<a target="_blank" href="' + state.map.url + '">View your Location</a>'
