@@ -29,7 +29,7 @@ var unsubscribe = store.subscribe(() => {
 	var state = store.getState();
 
 	console.log('searchText is: ', state.searchText);
-})
+});
 
 // unsubscribe();
 
